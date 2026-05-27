@@ -1,4 +1,5 @@
-import { sql } from "@vercel/postgres";
+import { db } from "@vercel/postgres";
+const sql = db.sql;
 
 type SearchResult = {
   inst_code: string;
